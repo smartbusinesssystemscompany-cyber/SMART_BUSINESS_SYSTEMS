@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /SBS-CRM.html
+Sitemap: https://www.smart-systems.com.co/sitemap.xml

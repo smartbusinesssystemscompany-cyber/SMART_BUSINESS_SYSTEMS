@@ -1,0 +1,45 @@
+SBS · Publish on www.smart-systems.com.co
+انشر الموقع على نطاقك
+=====================================================
+Files in this folder · ملفات هذا المجلد
+  index.html          The website · الموقع
+  SBS-ERP-Demo.html   The live ERP demo · العرض التجريبي
+  SBS-CRM.html        The private team workspace · مساحة عمل الفريق
+  CNAME               Tells GitHub Pages your domain · لـ GitHub Pages
+  robots.txt          Keeps the CRM out of Google · يمنع فهرسة CRM
+  sitemap.xml         Helps Google find your pages · يساعد جوجل
+
+Option A · Netlify — easiest · الأسهل
+  1 · app.netlify.com/drop  →  drag this folder
+  2 · Site settings → Domain management → Add a domain → www.smart-systems.com.co
+  3 · Netlify shows the DNS records. Put them at your registrar · see DNS below
+  4 · Delete CNAME from this folder — Netlify does not use it
+
+Option B · GitHub Pages
+  1 · Create a public repository on github.com
+  2 · Add file → Upload files → all files here → Commit
+  3 · Settings → Pages → Branch main · root → Save
+  4 · Settings → Pages → Custom domain → www.smart-systems.com.co → Save
+  5 · Tick "Enforce HTTPS" once it becomes available
+
+DNS at your registrar · سجلات DNS لدى مزود النطاق
+  Netlify
+    CNAME   www    <your-site>.netlify.app
+    ALIAS/ANAME or A for the bare domain — Netlify shows the exact value
+  GitHub Pages
+    CNAME   www    <your-github-username>.github.io
+    A       @      185.199.108.153
+    A       @      185.199.109.153
+    A       @      185.199.110.153
+    A       @      185.199.111.153
+
+  DNS changes take 10 minutes to a few hours · قد يستغرق التحديث ساعات قليلة
+
+After it is live · بعد التشغيل
+  Website       https://www.smart-systems.com.co
+  Demo          https://www.smart-systems.com.co/SBS-ERP-Demo.html
+  Team access   https://www.smart-systems.com.co/#team
+  Workspace     https://www.smart-systems.com.co/SBS-CRM.html
+
+  Sign in with username  nabil
+  Forms and the CRM only work on the live address, never from a file on your computer
